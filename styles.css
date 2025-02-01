@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+:root {
+  --color-primary-cyan: hsl(179, 62%, 43%);
+  --color-primary-light-cyan: hsl(178, 52%, 50%);
+  --color-primary-bright-yellow: hsl(71, 73%, 54%);
+  --color-neutral-light-gray: hsl(204, 43%, 93%);
+  --color-neutral-grayish-blue: hsl(218, 22%, 67%);
+  --color-white: hsla(0, 0%, 100%, 1);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-neutral-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.25rem;
+}
+
+.container {
+  color: var(--color-neutral-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 23.28px;
+  letter-spacing: -0.25px;
+  color: var(--color-primary-cyan);
+}
+
+.join-our-community {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+}
+.join-our-community h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.19px;
+  color: var(--color-primary-bright-yellow);
+}
+
+.join-our-community p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.17px;
+}
+
+.card {
+  flex: 1;
+  min-height: 200px;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: var(--color-primary-cyan);
+  color: var(--color-neutral-light-gray);
+  gap: 1rem;
+}
+
+.price-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 21.01px;
+  letter-spacing: -0.22px;
+}
+
+.price-card .price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 37.4px;
+  letter-spacing: -0.4px;
+  color: var(--color-white);
+}
+
+.price-card .price span {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+
+.price-card .description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+}
+
+.price-card button {
+  background-color: var(--color-primary-bright-yellow);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18.7px;
+  letter-spacing: -0.2px;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.price-card button:hover {
+  background-color: hsl(71, 73%, 45%);
+  transform: scale(1.05);
+}
+
+.price-card button:focus {
+  outline: 3px solid var(--color-primary-bright-yellow);
+  outline-offset: 2px;
+}
+
+
+.why-us-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: var(--color-primary-light-cyan);
+  color: var(--color-white);
+}
+
+.why-us-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 21.04px;
+  letter-spacing: -0.22px;
+  margin-bottom: 1.5rem;
+}
+
+.why-us-card ul {
+  list-style-type: none;
+}
+.why-us-card ul li {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 75%;
+  line-height: 20px;
+  letter-spacing: -0.17px;
+  margin-bottom: 0.3rem;
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .container h1 {
+    font-size: 2rem;
+    line-height: 28.06px;
+    letter-spacing: -0.3px;
+  }
+  .join-our-community h2 {
+    font-size: 1.25rem;
+    line-height: 21.04px;
+    letter-spacing: -0.22px;
+  }
+  .join-our-community p {
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+    margin-right: 7rem;
+  }
+
+  .container section {
+    display: flex;
+    border-radius: 0.5rem;
+  }
+
+  .price-card {
+    border-bottom-left-radius: 0.5rem;
+  }
+  .why-us-card {
+    border-bottom-right-radius: 0.5rem;
+  }
+}
