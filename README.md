@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Code Repo](https://github.com/Rgit915/single-price-grid-component)
-- Live Site URL: [Live Demo](https://github.com/Rgit915/single-price-grid-component)
+- Live Site URL: [Live Demo](https://rgit915.github.io/single-price-grid-component/)
 
 ## My process
 
